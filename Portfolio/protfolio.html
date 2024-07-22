@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/541c15bec9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
+  <div id="header">
+    <div class="container2">
+      <nav>
+        <img src="photo/logo.png" class="logo" width="70px" height="50px">
+        <ul id="sidemenu">
+
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#potfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas  fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+
+      <div class="header-text">
+        <!-- <p>Web Developer </p> -->
+        <br>
+        <h1>Hi, <br> I'm <span>Axat Dubey</span> <br> From Delhi</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!----------- about --------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="photo/axat.jpg" class="image1">
+        </div>
+        <div class="about-col-2">
+          <h1 class="Sub_title"> <i class="fa-solid fa-pen-nib fa-2xs"></i> About Me</h1>
+          <p>
+            Completed second year in Artificial Intelligence and Machine Learning . Completed courses from udemy of c
+            programming , python etc and also completed some free online course from youtube of CodeWithHarry ,
+            programming with Mosh etc
+
+          </p>
+          <div class="tab_titles">
+            <p class="tab_links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab_links" onclick="opentab('projects')">Projects</p>
+            <p class="tab_links" onclick="opentab('education')">Education</p>
+
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>● Programming Languages:</span> <br>Python / Java /C++</li>
+              <li><span>● Data Manipulation and Analysis:</span> <br> Pandas / NumPy</li>
+              <li><span>● Data Visualization: </span><br>Matplotlib / Seaborn</li>
+              <li><span>● Tools:</span><br> Jupyter Notebook</li>
+              <li><span>● Databases:</span><br> SQL</li>
+              <li><span>● Web Development:</span><br> HTML / CSS / JavaScript / ReactJS <br></li>
+              <li><span>● DSA:</span> Data Structure algorithm</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="projects">
+            <ul>
+              <li><span>● Face Mask Detection</span> <br> ○ Using dark web and neural network <br> ○ Detection using
+                images or videos</li><br>
+              <li><span>● E-agrimart</span><br> ○ Front end part in a machine learning project of rop yield production
+                and distribution management system</li><br>
+              <li><span>● Sentiment Analysis of Movie Reviews
+                </span><br>○ Utilized Natural Language Processing techniques to perform sentiment analysis on a dataset
+                of movie reviews. <br> ○ Achieved an accuracy of 85% in sentiment classification.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>● B.TECH :- Artificial Intelligence and Machine Learning</span><br> (2021-2025) from Dr. Akhilesh
+                Das Gupta Institute of Technology & Management, formerly known as Northern India Engineering College
+                under I.P.U. with CGPA 8.71(Semester: I to III).
+              </li>
+              <li><span>● 12th :</span><br> CBSE board from L.A.S.E.A Jhalawar With 75%.</li>
+              <li><span>● 10th :</span><br>CBSE board from D.A.V ghaziabad With 88%.</li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- --------services-------- -->
+  <div id="services">
+    <div class="container1">
+      <h1 class="Sub_title"><i class="fa-solid fa-pen-nib fa-2xs"></i> My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h1>Web Design</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam temporibus aliquid porro placeat
+            aspernatur qui quasi culpa veritatis, corrupti aperiam cumque impedit necessitatibus sequi pariatur voluptas
+            atque? Esse, ab.</p>
+          <a href="#">Learn More</a>
+
+        </div>
+        <div>
+          <i class="fa-solid fa-eye"></i>
+          <h1>Data Visualization</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam temporibus aliquid porro placeat
+            aspernatur qui quasi culpa veritatis, corrupti aperiam cumque impedit necessitatibus sequi pariatur voluptas
+            atque? Esse, ab.</p>
+          <a href="#">Learn More</a>
+
+        </div>
+        <div>
+          <i class="fa-solid fa-rocket"></i>
+          <h1>App Design</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam temporibus aliquid porro placeat
+            aspernatur qui quasi culpa veritatis, corrupti aperiam cumque impedit necessitatibus sequi pariatur voluptas
+            atque? Esse, ab.</p>
+          <a href="#">Learn More</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- -------------portfolio----------- -->
+
+
+
+  <div id="potfolio">
+    <div class="container1">
+      <h1 class="Sub_title"><i class="fa-solid fa-pen-nib fa-2xs"></i> My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="photo/project1.png" width="300" height="400">
+          <div class="layer">
+            <h3>Face Mask Detection</h3>
+            <p>The Face Mask Detection developed on combines cutting-edge technologies in neural networks and the
+              Darknet framework to create an intelligent system that can accurately detect whether individuals are
+              wearing face masks or not. This project holds significant relevance in the context of public health,
+              safety, and adherence to guidelines during various situations, such as the ongoing global pandemic or
+              other scenarios where face masks are essential. <br>
+              <!-- 
+              Key Components:
+              
+              Neural Network: The foundation of your project lies in a neural network, a powerful machine learning model inspired by the human brain. You've trained this neural network to recognize and classify images of faces, distinguishing between those with masks and those without.
+              Darknet Framework: Darknet, an open-source neural network framework, serves as the backbone for implementing your face mask detection system. It provides the necessary tools and infrastructure to construct and train complex neural networks efficiently.
+              Image Data: To train your neural network, you've collected and curated a diverse dataset of images containing individuals with varying facial expressions and orientations, some wearing masks correctly and others without masks. This data is essential for training the network to generalize its understanding of mask presence.
+              Preprocessing: Before feeding the data into the neural network, you've applied preprocessing techniques such as resizing, normalization, and augmentation to ensure consistency and improve the network's robustness to variations in image quality and appearance.</p> -->
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i> </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="photo/1*dwiWzakT0mtlVUS45m2XQA.png" width="300" height="400">
+          <div class="layer">
+            <h3> Sentiment Analysis of Movie Reviews</h3>
+            <p>The Sentiment Analysis of Movie Reviews project you've developed is a fascinating application of natural
+              language processing (NLP) and machine learning techniques. This project is designed to automatically
+              analyze and determine the sentiment expressed in movie reviews, helping viewers and stakeholders
+              understand the general opinion and emotional tone associated with different films.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="photo/homepageimg1.png" width="300" height="400">
+          <div class="layer">
+            <h3>E-agrimart</h3>
+            <p>This project helps us to connect farmers to show owners which helps in providing better margin to the
+              farmers and more support . It also predicts the annual growth of the goods on the basis of temperature,
+              moisture, humidity ,weather condition etc.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button">See More </a>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- -------------Contact------------ -->
+  <div class="contact">
+    <div class="container1">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="Sub_title">Contact Me</h1>
+
+          <p><i class="fa-solid fa-at"></i> axatdubey@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 9811381978</p>
+          <div class="social-icons">
+            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+
+          </div>
+          <a href="photo/Resume.pdf" download class="button button2">Download Cv</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="6" placeholder="Message"></textarea>
+            <button type="submit" class="button">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright <i class="fa-regular fa-copyright"></i> Axat. Made on 2023 </p>
+    </div>
+  </div>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab_links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemeu.style.right = '0';
+    }
+    function closemenu() {
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyOoQhs7woIfRrZ3TbMP8c9DzT9Q2GT2hYAqtAb-ZlTUsraBY6YMTt2z5jRNCIBe_X_Tg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message Sent Succesfully";
+          setTimeout(function () {
+            msg.innerHTML = ' '
+          }, 5000)
+          form.reset();
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+
+</html>
